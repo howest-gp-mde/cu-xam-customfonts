@@ -4,13 +4,22 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Style="{DynamicResource PlatformPaddedContentPageStyle}"
              x:Class="XrnCourse.CustomFonts.MainPage">
-
+    <ContentPage.Content>
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Insert Coin" 
+        HorizontalTextAlignment="Center"
+        VerticalOptions="CenterAndExpand" 
+        HorizontalOptions="Center">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS">Press Start 2P</On>
+                    <On Platform="Android">PressStart2P-Regular.ttf#Press Start 2P</On>
+                    <On Platform="UWP">/Assets/Fonts/PressStart2P-Regular.ttf#Press Start 2P</On>
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
     </StackLayout>
-
+    </ContentPage.Content>
 </ContentPage>
