@@ -144,7 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9"/>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +152,11 @@
       <Project>{999CA060-E15A-4D62-9599-34C12F304BEC}</Project>
       <Name>XrnCourse.CustomFonts</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\PressStart2P-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
